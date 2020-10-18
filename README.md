@@ -4,26 +4,27 @@ I filed an issue against Oakserver (https://github.com/oakserver/oak/issues/249)
 
 ## Running
 
-´´´
+```
 deno run --allow-net main.ts
-´´´
+```
+
 And
 
-´´´
+```
 curl -X GET http://localhost:1993/1
-´´´
+```
 
 And
 
-´´´
+```
 curl -X GET http://localhost:1993/2
-´´´
+```
 
 Which yields:
 
-´´´
+```
 The id /1 should be equal to /1.
 The id /2 should be equal to /2.
 The id /2 should be equal to /2.
 The id /2 should be equal to /1. // <--- This is not as intended.
-´´´
+```
